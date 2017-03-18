@@ -25,9 +25,9 @@ public class ParseApplication extends Application {
         ParseObject.registerSubclass(Visit.class);
         ParseObject.registerSubclass(Attendance.class);
         Parse.initialize(new  Parse.Configuration.Builder(this)
-                .applicationId("1ciDomXNy0w25UMdgP2oePoaY4ZCVrDJt5XnMJ28")
-                .clientKey("Zn0SJ0AgKnEenwGHlWwFOgUNmJO02pYJThVcGfvy")
-                .server("https://parseapi.back4app.com/").enableLocalDataStore().build());
+                .applicationId("PARSE applicationId to be added here")
+                .clientKey("Parse Client Id to be added here")
+                .server("Parse server address to be added here").enableLocalDataStore().build());
 
         ParseUser.enableAutomaticUser();
         ParseACL defaultACL = new ParseACL();

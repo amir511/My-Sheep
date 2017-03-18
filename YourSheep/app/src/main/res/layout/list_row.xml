@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_alignParentTop="true">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/sheep_void"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/rowKidImage"
+        android:adjustViewBounds="false"
+        android:saveEnabled="false"
+        android:scaleType="fitXY"
+        android:cropToPadding="false" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/red"
+        android:id="@+id/imageFrame"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:text="اسم تجريبي"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rowKidImage"
+        android:layout_toLeftOf="@+id/rowKidImage"
+        android:layout_toStartOf="@+id/rowKidImage"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/rowNameText"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبيعنوان تجريبي"
+        android:layout_below="@id/rowNameText"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@id/imageFrame"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/rowAddressText"
+        android:textColor="#ababab" />
+    <Button
+        android:text="Call"
+        android:layout_width="65dp"
+        android:layout_height="21dp"
+        android:id="@+id/callButton"
+        android:background="#f1f8e9"
+        android:textSize="18sp"
+        android:textColor="#7bb934"
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignTop="@+id/rowNameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:shadowColor="#7bb934"
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="100%"
+        android:layout_below="@id/rowAddressText"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-3dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:id="@+id/percentText"/>
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="22dp"
+        android:background="#e7f5f5"
+        android:layout_alignLeft="@id/callButton"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/percentText"
+        android:id="@+id/imageView5"
+        android:layout_alignRight="@id/rowAddressText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of visits: "
+        android:layout_alignTop="@id/percentText"
+        android:layout_alignLeft="@id/callButton"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:id="@+id/visitText"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 "
+        android:layout_alignTop="@id/percentText"
+        android:layout_toRightOf="@id/visitText"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rowVisitText"
+        android:textStyle="normal|bold"
+        />
+
+    <ImageView
+        android:layout_width="218dp"
+        android:layout_height="24dp"
+        android:background="#c2c2c2"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/percentText"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_alignRight="@+id/rowAddressText"
+        android:layout_alignEnd="@+id/rowAddressText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attended last time:  "
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:id="@+id/lastTimeText"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@id/imageView6"
+        android:layout_alignLeft="@id/visitText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="18sp"
+        android:textColor="#be360c"
+        android:id="@+id/rowLastTime"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_toRightOf="@id/lastTimeText"
+         />
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="Attendance \n    (7/10)"
+        android:textSize="12sp"
+        android:paddingBottom="5dp"
+        android:textStyle="italic|bold"
+        android:id="@+id/attendanceReport"
+        android:layout_below="@+id/percentText"
+        android:layout_alignLeft="@+id/percentText"
+        android:layout_alignStart="@+id/percentText" />
+
+
+</RelativeLayout>

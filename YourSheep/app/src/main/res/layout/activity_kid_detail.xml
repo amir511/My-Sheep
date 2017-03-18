@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kid_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yoursheep.jesus.com.yoursheep.KidDetail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sheep_void"
+                android:id="@+id/KidDetailImage"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/sheep_frame" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="35dp"
+                android:text="اسم تجريبي"
+                android:layout_toLeftOf="@id/KidDetailImage"
+                android:layout_marginRight="25dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/KidDetailName"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailImage"
+                android:text="Address:\nعنوان تجريبي"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:id="@+id/KidDetailAddress"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailAddress"
+                android:layout_marginTop="5dp"
+                android:text="Call Mobile number: 0000"
+                android:id="@+id/KidDetailMobileButton"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailMobileButton"
+                android:layout_marginTop="5dp"
+                android:text="Call Home number: 0000"
+                android:id="@+id/KidDetailHomeButton"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/KidDetailOtherInfo"
+                android:layout_below="@id/KidDetailHomeButton"
+                android:layout_marginTop="5dp"
+                android:text="Other Info:\n Confession Father: أبونا فلان\n Birthday: 8/11/1990\n email: test@testingmail.com\nSchool:القبة الثانوية مشتركة بنين تجريبية خاصة\nComments:يحب يهرج فى الفصل و يوجع دماغنا و يشتتنا\nOther Address:\nعنوان جدتة 9 ش المسيرى معرفش فين بالظبط بس ممكن نسأل"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other numbers:"
+                android:layout_below="@id/KidDetailOtherInfo"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:id="@+id/otherNumbersText"
+                android:textColor="#000000"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherNumbersText"
+                android:layout_marginTop="5dp"
+                android:text="Call Father number: 00000"
+                android:id="@+id/KidDetailFatherButton"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailFatherButton"
+                android:layout_marginTop="5dp"
+                android:text="Call Mother number: 00000"
+                android:id="@+id/KidDetailMotherButton"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailMotherButton"
+                android:layout_marginTop="5dp"
+                android:text="Call GrandParent number: 00000"
+                android:id="@+id/KidDetailGrandButton"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailGrandButton"
+                android:layout_marginTop="5dp"
+                android:text="Call Extra number 1: 00000"
+                android:id="@+id/KidDetailExtra1Button"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/KidDetailExtra1Button"
+                android:layout_marginTop="5dp"
+                android:text="Call Extra number 2: 00000"
+                android:id="@+id/KidDetailExtra2Button"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/checklist"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/bullet"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/11/2016"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/bullet"
+        android:layout_alignTop="@id/bullet"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/rowDate"
+        />
+
+
+
+</RelativeLayout>

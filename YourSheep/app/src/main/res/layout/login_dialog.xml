@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="First time login"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:width="200sp"
+        android:hint="User Name"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:id="@+id/userName"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/newgrey"
+        android:textColorHighlight="@color/newgrey"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:width="200sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:id="@+id/password"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/newgrey"
+        android:textColorHighlight="@color/newgrey"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignStart="@id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Cancel"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:id="@+id/CancelButton"
+        android:layout_alignParentBottom="false"
+        android:layout_toEndOf="@id/loginButton"
+        android:layout_toRightOf="@id/loginButton"
+        android:layout_alignTop="@id/loginButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/AppTheme" />
+
+
+</RelativeLayout>

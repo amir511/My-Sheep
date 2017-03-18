@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_kid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yoursheep.jesus.com.yoursheep.AddKid">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="120dp"
+                android:src="@drawable/sheep_void"
+                android:id="@+id/addKidImage"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/sheep_frame" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main info"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/mainTag"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/addNameText"
+                android:hint="Name"
+                android:layout_below="@id/mainTag"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/mobileNumber"
+                android:hint="Mobile"
+                android:layout_below="@+id/addNameText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/homeNumber"
+                android:hint="Home number"
+                android:layout_below="@id/mobileNumber"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="7"
+                android:id="@+id/fatherNumber"
+                android:hint="Father number"
+                android:layout_below="@id/homeNumber"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="7"
+                android:id="@+id/grandNumber"
+                android:hint="GrandParent no."
+                android:layout_alignTop="@id/fatherNumber"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="7"
+                android:id="@+id/motherNumber"
+                android:hint="Mother number"
+                android:layout_below="@+id/fatherNumber"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Extra number 1"
+                android:id="@+id/extraNumber1"
+                android:layout_below="@id/motherNumber"
+                android:ems="7"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Extra number 2"
+                android:id="@+id/extraNumber2"
+                android:layout_alignTop="@id/extraNumber1"
+                android:layout_alignParentRight="true"
+                android:inputType="phone"
+                android:ems="7"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confessionFather"
+                android:hint="Confession father"
+                android:layout_below="@id/extraNumber1"
+                android:inputType="textPersonName"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:textColor="@color/colorPrimary"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="Email address"
+                android:ems="10"
+                android:layout_below="@id/confessionFather"
+                android:inputType="textEmailAddress"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/school"
+                android:hint="School"
+                android:layout_below="@id/email"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthday"
+                android:layout_below="@id/school"
+                android:hint="Birthday"
+                android:inputType="date"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="20sp"
+                android:id="@+id/addressTag"
+                android:layout_below="@id/birthday"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="no. "
+                android:inputType="text"
+                android:id="@+id/buildingNumber"
+                android:layout_below="@id/addressTag"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressTag"
+                android:id="@+id/streetName"
+                android:hint="Street Name"
+                android:ems="10"
+                android:layout_toRightOf="@id/buildingNumber"
+                android:layout_marginLeft="35dp"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/areaName"
+                android:layout_below="@id/buildingNumber"
+                android:hint="Area"
+                android:ems="10"
+                android:layout_alignParentLeft="true"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/floor"
+                android:hint="floor"
+                android:layout_below="@id/areaName"
+                android:inputType="number"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/apartment"
+                android:layout_below="@id/areaName"
+                android:hint="Apartment"
+                android:layout_toRightOf="@id/floor"
+                android:layout_marginLeft="35dp"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Special Sign"
+                android:id="@+id/specialSign"
+                android:layout_below="@id/floor"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:minLines="1"
+                android:hint="Other Address"
+                android:ems="20"
+                android:id="@+id/otherAddress"
+                android:layout_below="@id/specialSign"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentTag"
+                android:layout_below="@id/otherAddress"
+                android:text="Comments"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comments"
+                android:hint="Do not put confidential info"
+                android:layout_below="@id/commentTag"
+                android:ems="20"
+                android:maxLines="10"
+                android:minLines="2"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addSheepButton"
+                android:text="Save"
+                android:textSize="20sp"
+                android:layout_below="@id/comments"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:text="Add/Change\n     Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="19dp"
+                android:id="@+id/onImageText"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

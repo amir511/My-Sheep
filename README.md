@@ -18,5 +18,5 @@ To use the app you have to make a free account on a server that uses Parse API l
 
 ## Chat:
 
-Lets talk and spreading idea on Gitter:
+Lets talk and spreading ideas on Gitter:
 * https://gitter.im/mySheepProject/Lobby

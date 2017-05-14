@@ -16,3 +16,7 @@ To use the app you have to make a free account on a server that uses Parse API l
 * Nice and clean UI based on Material design.
 
 
+## Chat:
+
+Lets talk and spreading idea on Gitter:
+* https://gitter.im/mySheepProject/Lobby

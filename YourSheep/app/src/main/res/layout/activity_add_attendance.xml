@@ -13,7 +13,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Attendance Date"
+            android:hint="@string/attendance_date"
             android:layout_centerHorizontal="true"
             android:inputType="date"
             android:textSize="22sp"

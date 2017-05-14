@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">My Sheep</string>
+    <string name="attendance_date">Attendance Date</string>
+    <string name="main_info">Main info</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="home_number">Home number</string>
+    <string name="father_number">Father number</string>
+    <string name="grandparent_no">GrandParent no.</string>
+    <string name="mother_number">Mother number</string>
+    <string name="extra_number_1">Extra number 1</string>
+    <string name="extra_number_2">Extra number 2</string>
+    <string name="confession_father">Confession father</string>
+    <string name="email_address">Email address</string>
+    <string name="school">School</string>
+    <string name="birthday">Birthday</string>
+    <string name="address">Address</string>
+    <string name="street_name">Street Name</string>
+    <string name="area">Area</string>
+    <string name="floor">floor</string>
+    <string name="apartment">Apartment</string>
+    <string name="special_sign">Special Sign</string>
+    <string name="other_address">Other Address</string>
+    <string name="comments">Comments</string>
+    <string name="do_not_put_confidential_info">Do not put confidential info</string>
+    <string name="save">Save</string>
 </resources>

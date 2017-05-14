@@ -28,7 +28,7 @@
 
 
         <TextView
-            android:text="اسم تجريبي"
+            android:text="@string/attendance"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/atRowKidImage"

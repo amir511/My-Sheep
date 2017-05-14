@@ -6,7 +6,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="New visit"
+        android:text="@string/new_visit"
         android:textSize="25sp"
         android:textStyle="bold"
         android:id="@+id/visitTitle"
@@ -16,7 +16,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Visit date"
+        android:hint="@string/visit_date"
         android:layout_below="@id/visitTitle"
         android:layout_alignParentLeft="true"
         android:inputType="date"
@@ -32,7 +32,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Servants' names"
+        android:hint="@string/servants_names"
         android:layout_below="@id/visitDate"
         android:layout_alignParentLeft="true"
         android:inputType="textMultiLine"
@@ -48,7 +48,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Visit Summary"
+        android:hint="@string/visit_summary"
         android:layout_below="@id/visitServants"
         android:layout_alignParentLeft="true"
         android:inputType="textMultiLine"
@@ -64,7 +64,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/saveNewVisit"
         android:layout_below="@id/visitSummary"
         android:layout_centerHorizontal="true"
         android:textAllCaps="false"
